@@ -13,61 +13,52 @@ It is a centroid-based algorithm, where each cluster is associated with a centro
 
 The algorithm takes the unlabeled dataset as input, divides the dataset into k-number of clusters, and repeats the process until it does not find the best clusters. The value of k should be predetermined in this algorithm.
 
-<h2>The k-means clustering algorithm mainly performs two tasks:
-
-1.Determines the best value for K center points or centroids by an iterative process.
-Assigns each data point to its closest k-center. Those data points which are near to the particular k-center, create a cluster.
-Hence each cluster has datapoints with some commonalities, and it is away from other clusters.
-
-The below diagram explains the working of the K-means Clustering Algorithm:
+<h2>The k-means clustering algorithm mainly performs two tasks:</h2>
+<ul>
+<li>Determines the best value for K center points or centroids by an iterative process.</li>
+<li>Assigns each data point to its closest k-center. Those data points which are near to the particular k-center, create a cluster.
+Hence each cluster has datapoints with some commonalities, and it is away from other clusters.</li>
+</ul>
+<h2>The below diagram explains the working of the K-means Clustering Algorithm:</h2>
 
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning.png">
 
-K-Means Clustering Algorithm
-How does the K-Means Algorithm Work?
+
+<h2>How does the K-Means Algorithm Work?</h2>
 The working of the K-Means algorithm is explained in the below steps:
 
-Step-1: Select the number K to decide the number of clusters.
+<h2>Step-1:</h2> Select the number K to decide the number of clusters.
 
-Step-2: Select random K points or centroids. (It can be other from the input dataset).
+<h2>Step-2:</h2> Select random K points or centroids. (It can be other from the input dataset).
 
-Step-3: Assign each data point to their closest centroid, which will form the predefined K clusters.
+<h2>Step-3:</h2> Assign each data point to their closest centroid, which will form the predefined K clusters.
 
 
-Step-4: Calculate the variance and place a new centroid of each cluster.
+<h2>Step-4:</h2> Calculate the variance and place a new centroid of each cluster.
 
-Step-5: Repeat the third steps, which means reassign each datapoint to the new closest centroid of each cluster.
+<h2>Step-5:</h2> Repeat the third steps, which means reassign each datapoint to the new closest centroid of each cluster.
 
-Step-6: If any reassignment occurs, then go to step-4 else go to FINISH.
+<h2>Step-6:</h2> If any reassignment occurs, then go to step-4 else go to FINISH.
 
-Step-7: The model is ready.
+<h2>Step-7:</h2> The model is ready.
 
-Let's understand the above steps by considering the visual plots:
-
+<h2>Let's understand the above steps by considering the visual plots:</h2>
 Suppose we have two variables M1 and M2. The x-y axis scatter plot of these two variables is given below:
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning2.png">
-
-K-Means Clustering Algorithm
 Let's take number k of clusters, i.e., K=2, to identify the dataset and to put them into different clusters. It means here we will try to group these datasets into two different clusters.
 We need to choose some random k points or centroid to form the cluster. These points can be either the points from the dataset or any other point. So, here we are selecting the below two points as k points, which are not the part of our dataset. Consider the below image:
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning3.png">
-K-Means Clustering Algorithm
 Now we will assign each data point of the scatter plot to its closest K-point or centroid. We will compute it by applying some mathematics that we have studied to calculate the distance between two points. So, we will draw a median between both the centroids. Consider the below image:
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning4.png">
-K-Means Clustering Algorithm
 From the above image, it is clear that points left side of the line is near to the K1 or blue centroid, and points to the right of the line are close to the yellow centroid. Let's color them as blue and yellow for clear visualization.
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning5.png">
-K-Means Clustering Algorithm
 As we need to find the closest cluster, so we will repeat the process by choosing a new centroid. To choose the new centroids, we will compute the center of gravity of these centroids, and will find new centroids as below:
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning6.png">
-K-Means Clustering Algorithm
 Next, we will reassign each datapoint to the new centroid. For this, we will repeat the same process of finding a median line. The median will be like below image:
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning7.png">
-K-Means Clustering Algorithm
 From the above image, we can see, one yellow point is on the left side of the line, and two blue points are right to the line. So, these three points will be assigned to new centroids.
 <img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning8.png">
 
-K-Means Clustering Algorithm
 As reassignment has taken place, so we will again go to the step-4, which is finding new centroids or K-points.
 <ul>
 <li>We will repeat the process by finding the center of gravity of centroids</li>
