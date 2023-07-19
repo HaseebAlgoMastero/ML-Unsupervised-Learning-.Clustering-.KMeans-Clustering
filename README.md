@@ -21,7 +21,7 @@ Hence each cluster has datapoints with some commonalities, and it is away from o
 
 The below diagram explains the working of the K-means Clustering Algorithm:
 
-<img = src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning.png">
+<img src = "https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning.png">
 
 K-Means Clustering Algorithm
 How does the K-Means Algorithm Work?
