@@ -69,12 +69,12 @@ From the above image, we can see, one yellow point is on the left side of the li
 
 K-Means Clustering Algorithm
 As reassignment has taken place, so we will again go to the step-4, which is finding new centroids or K-points.
-
-1-We will repeat the process by finding the center of gravity of centroids
-2-As we got the new centroids so again will draw the median line and reassign the data points
-3-We can see in the above image; there are no dissimilar data points on either side of the line, which means our model is formed. 
-4-As our model is ready, so we can now remove the assumed centroids
-
+<ul>
+<li>We will repeat the process by finding the center of gravity of centroids</li>
+<li>As we got the new centroids so again will draw the median line and reassign the data points</li>
+<li>We can see in the above image; there are no dissimilar data points on either side of the line, which means our model is formed. </li>
+<li>As our model is ready, so we can now remove the assumed centroids</li>
+</ul>
 <h2>How to choose the value of "K number of clusters" in K-means Clustering?</h2>
 The performance of the K-means clustering algorithm depends upon highly efficient clusters that it forms. But choosing the optimal number of clusters is a big task. There are some different ways to find the optimal number of clusters, but here we are discussing the most appropriate method to find the number of clusters or value of K. The method is given below:
 
@@ -89,12 +89,13 @@ In the above formula of WCSS,</h2>
 <h2>To measure the distance between data points and centroid, we can use any method such as Euclidean distance or Manhattan distance.</h2>
 
 <h2>To find the optimal value of clusters, the elbow method follows the below steps:</h2>
-
-1-It executes the K-means clustering on a given dataset for different K values (ranges from 1-10).
-2-For each value of K, calculates the WCSS value.
-3-Plots a curve between calculated WCSS values and the number of clusters K.
-4-The sharp point of bend or a point of the plot looks like an arm, then that point is considered as the best value of K.
-5-Since the graph shows the sharp bend, which looks like an elbow, hence it is known as the elbow method. The graph for the elbow method looks like the below image:
+<ul>
+<li>It executes the K-means clustering on a given dataset for different K values (ranges from 1-10).</li>
+<li>For each value of K, calculates the WCSS value.</li>
+<li>Plots a curve between calculated WCSS values and the number of clusters K.</li>
+<li>The sharp point of bend or a point of the plot looks like an arm, then that point is considered as the best value of K.</li>
+<li>Since the graph shows the sharp bend, which looks like an elbow, hence it is known as the elbow method. The graph for the elbow method looks like the below image:</li>
+</ul>
 <img src ="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning13.png">
 
 <h2>Note:</h2> We can choose the number of clusters equal to the given data points. If we choose the number of clusters equal to the data points, then the value of WCSS becomes zero, and that will be the endpoint of the plot.
