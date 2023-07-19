@@ -91,3 +91,5 @@ In the above formula of WCSS,</h2>
 
 <h2>Note:</h2> We can choose the number of clusters equal to the given data points. If we choose the number of clusters equal to the data points, then the value of WCSS becomes zero, and that will be the endpoint of the plot.
 
+<h2>Note:</h2> For Python Implementation See the repository
+<h2>Best Of Luck</h2>
